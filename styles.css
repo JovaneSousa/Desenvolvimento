@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6A5ACD;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 2px purple;
+}
+
+p {
+    color: snow;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilo para ocultar as informações por padrão */
+.info {
+    display: none;
+}
+
+/* Estilo para o botão */
+.toggle-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Alterado para "block" para ocupar a largura total */
+    margin: 20px auto; /* Centralizado na horizontal com uma margem superior */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}

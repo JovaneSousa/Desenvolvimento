@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Título da página</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para ocultar as informações por padrão */
+        .info {
+            display: none;
+        }
+
+        /* Estilo para centralizar o botão */
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quem sou eu?</h1>
+    
+    <!-- Botão para mostrar/ocultar as informações -->
+    <button onclick="toggleInfo()">Clique e você irá saber quem sou eu 😀</button>
+    
+    <!-- Informações sobre o Jovane -->
+    <div class="info">
+        <p>Eu sou o Jovane, tenho 18 anos e gosto bastante de assistir anime no meu tempo livre.</p>
+        <p>Eu sou muito pontual com horários e me irrito bastante com atrasos.</p>
+        <p>Gosto muito de leitura, meus gêneros preferidos são literatura e drama/terror.</p>
+        <p>Aos finais de semana quando sobra tempo uns dos meus hobbies favoritos são os games.</p>
+        <p>Gosto bastante de música, sou bem eclético aos gêneros, mas o meu preferido é rock.</p>
+        <p>Eu tenho um gato e ele se chama Tigre, gosto bastante de passar o tempo com ele.</p>
+        <p>Minha cor favorita é preto/roxo.</p>
+        <p>Sou de humanas, gosto de tudo relacionado a temáticas ligadas à história, filosofia e etc.</p>
+        <p>Trabalho na área de TI e sou bem satisfeito com o meu emprego.</p>
+        <p>Sou muito persistente nos objetivos que quero atingir.</p>
+    </div>
+    
+    <script>
+        // Função para alternar a visibilidade das informações
+        function toggleInfo() {
+            var infoDiv = document.querySelector('.info');
+            if (infoDiv.style.display === 'none') {
+                infoDiv.style.display = 'block';
+            } else {
+                infoDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
